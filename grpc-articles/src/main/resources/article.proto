@@ -1,0 +1,29 @@
+syntax = "proto3";
+option java_package = "crudarticles";
+// Définition du service gRPC
+service ArticleService {
+  rpc CreateArticle (Article) returns (ArticleResponse);
+  rpc GetArticle (ArticleRequest) returns (Article);
+  rpc UpdateArticle (Article) returns (ArticleResponse);
+  rpc DeleteArticle (ArticleRequest) returns (ArticleResponse);
+  rpc GetAllArticles (EmptyRequest) returns (ArticleListResponse);
+}
+// Message pour un article
+message Article {
+  string code = 1;
+  string designation = 2;
+  double prix = 3;
+}
+// Messages pour les requêtes et réponses
+message ArticleRequest {
+  string code = 1;
+}
+message ArticleResponse {
+  string message = 1;
+}
+// Message pour une requête vide
+message EmptyRequest {}
+// Message pour une liste d'articles
+message ArticleListResponse {
+  repeated Article articles = 1;
+}
