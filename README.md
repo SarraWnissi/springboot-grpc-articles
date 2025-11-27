@@ -4,7 +4,7 @@
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.3.3-green)](https://spring.io/projects/spring-boot)
 [![gRPC](https://img.shields.io/badge/gRPC-1.65.0-brightgreen)](https://grpc.io/)
 [![Protocol Buffers](https://img.shields.io/badge/Protobuf-3.25.0-orange)](https://developers.google.com/protocol-buffers)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](./LICENSE)
 
 ---
 
@@ -66,7 +66,8 @@ springboot-grpc-articles
 └── README.md
 MIT License
 
-Copyright (c) 2025 Sarra
+
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
